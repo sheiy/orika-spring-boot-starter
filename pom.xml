@@ -6,7 +6,7 @@
 
     <groupId>com.github.sofior</groupId>
     <artifactId>orika-spring-boot-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
         <java.version>8</java.version>
