@@ -30,4 +30,15 @@ common: "common",
 y: "X"
 }
 ```
+# custom mapperFactory
+```java
+@Configuration
+public class Config {
+    @Bean
+    public MapperFactory mapperFactory() {
+        //init your own factory here
+        return new DefaultMapperFactory.Builder().build();
+    }
+}
+```
 more info of orika click [here](http://orika-mapper.github.io/orika-docs)
