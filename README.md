@@ -26,8 +26,8 @@ public class TController {
 via '/test' you will see 
 ```json
 {
-common: "common",
-y: "X"
+"common": "common",
+"y": "X"
 }
 ```
 # custom mapperFactory
