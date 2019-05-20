@@ -75,12 +75,12 @@
         <repository>
             <id>ownw</id>
             <name>Internal Releases</name>
-            <url>http://xlz35429674.3322.org:8081/nexus/content/repositories/thirdparty</url>
+            <url>http://xlz35429674.3322.org:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>ownw</id>
             <name>Internal Releases</name>
-            <url>http://xlz35429674.3322.org:8081/nexus/content/repositories/thirdparty</url>
+            <url>http://xlz35429674.3322.org:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
