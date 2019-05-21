@@ -5,7 +5,7 @@ import ma.glasnost.orika.converter.ConverterFactory;
 
 public interface OrikaMapper {
 
-    void register(MapperFactory mapperFactory);
+    default void register(MapperFactory mapperFactory){}
 
-    void registerConverter(ConverterFactory converterFactory);
+    default void registerConverter(ConverterFactory converterFactory){}
 }
