@@ -35,6 +35,9 @@ public class OrikaAware implements ApplicationContextAware {
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         Map<String, OrikaMapper> beansOfType = applicationContext.getBeansOfType(OrikaMapper.class);
         final MapperFactory mapperFactory = mapperFactory();
-        beansOfType.forEach((s, mapper) -> mapper.register(mapperFactory));
+        beansOfType.forEach((s, mapper) -> {
+            mapper.register(mapperFactory);
+            mapper.registerConverter(mapperFactory.getConverterFactory());
+        });
     }
 }
